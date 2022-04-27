@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+
+    <widget id="product_attribute" class="Webidea24\WidgetProductAttribute\Block\Widget\Attribute" is_email_compatible="true">
+        <label translate="true">Product Attribute</label>
+        <description translate="true">Display value of a specific product attribute</description>
+        <parameters>
+            <parameter name="id_path" xsi:type="block" visible="true" required="true" sort_order="10">
+                <label translate="true">Product</label>
+                <block class="Magento\Catalog\Block\Adminhtml\Product\Widget\Chooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string" translate="true">Select Product...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="attribute_code" xsi:type="select" source_model="Webidea24\WidgetProductPrice\Model\Widget\Source\Attribute" required="true" visible="true">
+                <label>Attribute</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
+

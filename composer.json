@@ -1,0 +1,16 @@
+{
+    "name": "webidea24/magento2-module-widget-product-attribute",
+    "description": "Magento 2 Module: Widget: Displays a specific attribute value of a product",
+    "type": "magento2-module",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Webidea24\\WidgetProductAttribute\\": ""
+        }
+    }
+}
