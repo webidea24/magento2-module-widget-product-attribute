@@ -59,7 +59,7 @@ class Attribute extends Template implements BlockInterface, IdentityInterface
     {
         return [
             'widget_product_attribute__' . $this->getAttributeCode(),
-            Product::CACHE_TAG . '_' . $this->$this->getProductId()
+            Product::CACHE_TAG . '_' . $this->getProductId()
         ];
     }
 }
